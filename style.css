@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    color: violet;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: violet;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+}
+/* Section Mes Projets */
+.projects-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.projects-container h2 {
+    color: violet;
+    font-size: 2.5em;
+}
+
+.projects-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Grille des projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Cartes des projets */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px violet;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    color: violet;
+    margin-top: 10px;
+}
+
+/* Bouton Télécharger */
+.project-card .btn {
+    display: inline-block;
+    background: violet;
+    color: black;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background: white;
+    color: black;
+}
